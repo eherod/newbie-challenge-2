@@ -1,0 +1,152 @@
+:root{
+
+    --sedan: hsl(31, 77%, 52%);
+    --suv: hsl(184, 100%, 22%);
+    --luxury: hsl(179, 100%, 13%);
+    --pclr: hsla(0, 0%, 100%, 0.75);
+    --hdbt: hsl(0, 0%, 95%);
+
+
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 15px;
+}
+.wrapper{
+    width: 80%;
+    margin: 10% auto;
+}
+
+.sedans{
+width: 100%;
+
+background-color: var(--sedan);
+border-radius: 5px 5px 0 0;
+padding: 2rem;
+}
+
+
+
+.suvs{
+    width: 100%;
+    background-color: var(--suv);
+    padding: 2rem;
+}
+
+.luxury{
+    width: 100%;
+    background-color: var(--luxury);
+    border-radius: 0 0 5px 5px;
+    padding: 2rem;
+
+}
+
+h2{
+    font-family: 'Big Shoulders Display', cursive;
+    color: var(--hdbt);
+    padding: 1rem 0;
+}
+
+p{
+    font-family: 'Lexend Deca', sans-serif;
+    color: var(--pclr);
+    padding-bottom: 2rem;
+    line-height: 1.5rem;
+}
+
+button{
+    font-family: 'Lexend Deca', sans-serif;
+    background-color: var(--hdbt);
+    border: 1px solid var(--hdbt);
+    border-radius: 30px;
+    padding: .5rem 1rem;
+   
+
+}
+
+.sed-btn{
+    color: var(--sedan);
+
+}
+
+.suv-btn{
+    color: var(--suv);
+}
+
+.lux-btn{
+    color: var(--luxury);
+}
+
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+  }
+
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
+
+
+  @media (min-width: 1000px){
+      .wrapper{
+          width: 75%;
+      }
+      .sedans {
+          width: 33%;
+          height: 100%;
+          float: left;
+          border-radius: 5px 0 0 5px;
+      }
+
+      .suvs{
+        width: 33%;
+        height: 100%;
+        float: left;
+        
+    }
+    
+    .luxury{
+        width: 33%;
+        height: 100%;
+        float: left;
+        border-radius: 0 5px 5px 0;
+        
+    
+    }
+
+    h2 {
+        font-size: 2rem;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+
+    p{
+        padding-bottom: 5rem;
+        line-height: 1.75rem;
+        padding-right: 1.5rem;
+    }
+    button{
+        width: 10rem;
+        height: 3rem;
+    }
+
+
+.attribution {
+   float: left;
+   width: 100%;
+   margin-top: 10px;
+   text-align: center;
+   padding-bottom: 5rem;
+   
+  }
+
+
+  }
